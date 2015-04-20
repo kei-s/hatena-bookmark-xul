@@ -386,7 +386,7 @@ var CommentViewer = {
     lazyTimerHandler: function(ev) {
         let bs = CommentViewer.lazyWriterBookmarks;
         if (bs && bs.length) {
-            let fragment = CommentViewer.renderComment(bs, 50, fragment);
+            let fragment = CommentViewer.renderComment(bs, 50);
             list.appendChild(fragment);
             CommentViewer.renderPendingStars();
         }
